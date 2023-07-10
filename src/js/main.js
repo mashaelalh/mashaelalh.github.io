@@ -1,7 +1,10 @@
 (function () {
   const win = window
   const doc = document.documentElement
+const player = new Plyr('video', {captions: {active: true}});
 
+// Expose player so it can be used from the console
+    window.player = player;
   doc.classList.remove('no-js')
   doc.classList.add('js')
 
